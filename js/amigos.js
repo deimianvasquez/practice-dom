@@ -31,20 +31,29 @@ window.onload = () => {
 
 
     buttonNo.addEventListener("mouseover", () => {
-        buttonNo.style.left = `${Math.floor(Math.random() * 490)}px`
-        buttonNo.style.bottom = `${Math.floor(Math.random() * 490)}px`
+        buttonNo.style.left = `${Math.floor(Math.random() * 480)}px`
+        buttonNo.style.bottom = `${Math.floor(Math.random() * 480)}px`
     })
 
     buttonSip.addEventListener("click", () => {
         alert("Eeeeee!!!!")
     })
 
-   
 
-    setInterval(()=>{
-        app.style.backgroundColor = arrColors[Math.floor(Math.random()*arrColors.length)]
-    }, 2000)
+    // setInterval(()=>{
+    //     console.log(0)
+    // }, 2000)
+
+    // setTimeout(()=>{
+    //     console.log("hola")
+    // }, 2000)
+
+    // setInterval(()=>{
+    //     app.style.backgroundColor = arrColors[Math.floor(Math.random()*arrColors.length)]
+    // }, 2000)
 
     app.appendChild(buttonNo)
     app.appendChild(buttonSip)
+    body.insertBefore(h1, app)
+
 }
